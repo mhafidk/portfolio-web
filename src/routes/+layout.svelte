@@ -1,5 +1,11 @@
 <script>
   import "../app.css";
+	import Navbar from "../lib/components/navbar.svelte";
 </script>
 
-<slot />
+<div class="bg-neutral-50 text-neutral-900">
+  <div class="p-4 max-w-screen-md mx-auto">
+    <Navbar />
+    <slot />
+  </div>
+</div>
