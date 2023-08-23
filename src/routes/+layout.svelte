@@ -5,9 +5,9 @@
 </script>
 
 <div class="bg-neutral-50 text-neutral-900 font-medium">
+  <Navbar />
   <div class="p-4 max-w-screen-md mx-auto">
-    <Navbar />
     <slot />
-    <Footer />
   </div>
+  <Footer />
 </div>

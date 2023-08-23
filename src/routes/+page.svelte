@@ -135,7 +135,8 @@
     </div>
   </div>
 </div>
-<div class="pb-32" id="contact">
+<div id="contact" class="pb-8"></div>
+<div class="pb-32">
   <h2 class="text-4xl font-bold border-b pb-2 text-center">CONTACT</h2>
   <p class="text-sm pt-2 text-neutral-400 text-center">Let's get in touch!</p>
   <div class="pt-8">
