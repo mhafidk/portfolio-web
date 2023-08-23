@@ -1,4 +1,4 @@
-<nav class="flex justify-between items-center">
+<nav class="flex justify-between items-center border-b pb-6 pt-2">
   <div class="">
     <a href="/" class="text-2xl font-black bg-gradient-to-r from-violet-600 to-pink-600 bg-clip-text text-transparent tracking-tighter">MHK</a>
   </div>
