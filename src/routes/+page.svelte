@@ -128,10 +128,9 @@
   <p class="text-sm pt-2 text-neutral-400 text-center">Anything I've on my mind</p>
   <div class="pt-8">
     <div class="grid grid-cols-1 gap-12">
-      <BlogCard />
-      <BlogCard />
-      <BlogCard />
-      <BlogCard />
+      {#each posts as post}
+        <BlogCard {post} />
+      {/each}
     </div>
   </div>
   <div class="flex justify-center pt-12">
@@ -157,7 +156,7 @@
 						name="name"
 						placeholder="Name"
 						required=""
-						class="w-full rounded focus:border-violet-600"
+						class="w-full rounded focus:border-violet-600 bg-neutral-50"
 						bind:value={name}
 					/>
 				</div>
@@ -169,7 +168,7 @@
 						name="email"
 						placeholder="Email"
 						required=""
-						class="w-full rounded focus:border-violet-600"
+						class="w-full rounded focus:border-violet-600 bg-neutral-50"
 						bind:value={email}
 					/>
 				</div>
@@ -180,7 +179,7 @@
 						name="message"
 						placeholder="Message"
 						required=""
-						class="w-full rounded h-36 focus:border-violet-600"
+						class="w-full rounded h-36 focus:border-violet-600 bg-neutral-50"
 						bind:value={message}
 					/>
 				</div>
