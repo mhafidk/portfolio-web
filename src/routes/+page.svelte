@@ -40,9 +40,9 @@
 	<title>Muhammad Hafid K — That's me!</title>
 </svelte:head>
 
-<div class="py-32 text-xl text-center">
-  <h1 class="text-6xl font-extrabold">MUHAMMAD HAFID K</h1>
-  <p class="pt-2 text-xl font-semibold">That's my name!</p>
+<div class="py-32 text-lg md:text-xl text-center">
+  <h1 class="text-4xl md:text-6xl font-extrabold">MUHAMMAD HAFID K</h1>
+  <p class="pt-2 font-semibold">That's my name!</p>
   <p class="pt-2">Software engineer based in Bogor, Indonesia. Currently working as a backend engineer at <a href="https://www.qontak.com" class="text-pink-600 border-b border-pink-600">Qontak</a>.</p>
   <div class="py-6 flex justify-center gap-10 text-violet-600">
     <a href="mailto:mhafidk@gmail.com" target="_blank">
@@ -52,26 +52,26 @@
     <a href="https://www.linkedin.com/in/mhafidk/" target="_blank" rel="noreferrer">
       <svg class="stroke-violet-600 hover:stroke-violet-700 w-8 h-8" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M21 8v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8a5 5 0 015-5h8a5 5 0 015 5zM7 17v-7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 17v-3.25M11 10v3.75m0 0c0-3.75 6-3.75 6 0V17M7 7.01l.01-.011" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
   </div>
-  <div class="pt-3 text-neutral-50 text-lg">
+  <div class="pt-3 text-neutral-50 text-base md:text-lg flex gap-2 flex-wrap md:flex-nowrap justify-center">
     <a href="/about" class="px-4 py-2 bg-violet-600 hover:bg-violet-700 rounded">More about me</a>
-    <a href="/about" class="px-4 py-2 bg-pink-600 hover:bg-pink-700 rounded">Read my blog</a>
+    <a href="/about" class="px-4 py-2 w-40 bg-pink-600 hover:bg-pink-700 rounded">Read my blog</a>
   </div>
 </div>
 <div class="pb-32">
-  <h2 class="text-4xl font-bold border-b pb-2 text-center">EXPERIENCES</h2>
+  <h2 class="text-2xl md:text-4xl font-bold border-b pb-2 text-center">EXPERIENCES</h2>
   <p class="text-sm pt-2 text-neutral-400 text-center">My professional work journey</p>
   <div class="pt-8">
     <div class="flex gap-4">
-      <p class="text-violet-600 font-bold text-2xl">#1</p>
+      <p class="text-violet-600 font-bold text-lg md:text-2xl">#1</p>
       <div class="w-full">
-        <p class="font-bold text-2xl">
+        <p class="font-bold text-lg md:text-2xl">
           Backend Engineer, <a href="https://www.qontak.com" class="text-violet-600 underline"
             >Mekari Qontak</a
           >
         </p>
-        <div class="text-lg mt-2">
+        <div class="text-base md:text-lg mt-2">
           <p>2020 - Present</p>
-          <div class="flex flex-wrap gap-2 mt-3 text-base items-center">
+          <div class="flex flex-wrap gap-2 mt-3 text-sm md:text-base items-center">
             <p class="px-4 py-2 text-pink-600 border border-pink-600 rounded">
               Ruby
             </p>
@@ -89,7 +89,7 @@
   <p class="my-2 text-neutral-400 text-sm text-center mt-24">
 		list of tools I've been familiar with.
 	</p>
-	<div class="flex flex-wrap gap-2 justify-center items-center mt-4 text-base">
+	<div class="flex flex-wrap gap-2 justify-center items-center mt-4 text-sm md:text-base">
 		<p class="px-4 py-2 text-violet-600 border border-violet-600 rounded">Ruby</p>
 		<p class="px-4 py-2 text-violet-600 border border-violet-600 rounded">
 			Ruby on Rails
@@ -102,15 +102,15 @@
 	</div>
 </div>
 <div class="pb-32">
-  <h2 class="text-4xl font-bold border-b pb-2 text-center">PROJECTS</h2>
+  <h2 class="text-2xl md:text-4xl font-bold border-b pb-2 text-center">PROJECTS</h2>
   <p class="text-sm pt-2 text-neutral-400 text-center">My blood, sweat, and tears</p>
   <div class="pt-8">
     <div class="">
       <img src="/portfolio-web.webp" alt="MHK" class="border rounded w-full h-full">
       <div class="pt-4">
-        <h3 class="text-center text-2xl font-bold text-violet-600">Personal Website</h3>
+        <h3 class="text-center text-lg md:text-2xl font-bold text-violet-600">Personal Website</h3>
         <p class="pt-3 text-justify">My very own website and blog! I build this site using Svelte, Tailwind CSS, and Graph CMS. Frontend is not my strong suit, but this site isn't that bad, right? I learnt a lot about frontend while making this site. A lot of new features will come out!</p>
-        <div class="pt-3 flex justify-center gap-6 text-pink-600">
+        <div class="pt-3 text-sm md:text-base flex justify-center gap-6 text-pink-600">
           <p>Svelte</p>
           <p>Tailwind CSS</p>
           <p>Graph CMS</p>
@@ -124,7 +124,7 @@
   </div>
 </div>
 <div class="pb-32">
-  <h2 class="text-4xl font-bold border-b pb-2 text-center">WRITING</h2>
+  <h2 class="text-2xl md:text-4xl font-bold border-b pb-2 text-center">WRITING</h2>
   <p class="text-sm pt-2 text-neutral-400 text-center">Anything I've on my mind</p>
   <div class="pt-8">
     <div class="grid grid-cols-1 gap-12">
@@ -134,10 +134,13 @@
       <BlogCard />
     </div>
   </div>
+  <div class="flex justify-center pt-12">
+    <a href="/writing" class="bg-violet-600 hover:bg-violet-700 text-neutral-50 px-4 py-2 rounded">More</a>
+  </div>
 </div>
 <div id="contact" class="pb-8"></div>
 <div class="pb-32">
-  <h2 class="text-4xl font-bold border-b pb-2 text-center">CONTACT</h2>
+  <h2 class="text-2xl md:text-4xl font-bold border-b pb-2 text-center">CONTACT</h2>
   <p class="text-sm pt-2 text-neutral-400 text-center">Let's get in touch!</p>
   <div class="pt-8">
     <p class="text-center">
@@ -185,7 +188,7 @@
 					<button
 						type="submit"
 						disabled={submitting}
-						class="bg-violet-600 hover:bg-violet-700 text-neutral-50 px-6 py-2 rounded">Send</button
+						class="bg-violet-600 hover:bg-violet-700 text-neutral-50 px-4 py-2 rounded">Send</button
 					>
 				</div>
 			</form>
