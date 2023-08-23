@@ -1,7 +1,41 @@
 <script>
 	import BlogCard from "../lib/components/blog-card.svelte";
 
+	const FORMSPARK_ACTION_URL = 'https://submit-form.com/tZLGuL4z';
+
+	export let data;
+	let posts = data.posts;
+	let name = '';
+	let email = '';
+	let message = '';
+	let toggleModal = false;
+	let submitting = false;
+
+	async function submitForm() {
+		try {
+			submitting = true;
+			await fetch(FORMSPARK_ACTION_URL, {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+					Accept: 'application/json'
+				},
+				body: JSON.stringify({
+					name,
+					email,
+					message
+				})
+			});
+			name = '';
+			email = '';
+			message = '';
+			toggleModal = true;
+		} finally {
+			submitting = false;
+		}
+	}
 </script>
+
 <svelte:head>
 	<title>Muhammad Hafid K — That's me!</title>
 </svelte:head>
@@ -101,3 +135,89 @@
     </div>
   </div>
 </div>
+<div class="pb-32" id="contact">
+  <h2 class="text-4xl font-bold border-b pb-2 text-center">CONTACT</h2>
+  <p class="text-sm pt-2 text-neutral-400 text-center">Let's get in touch!</p>
+  <div class="pt-8">
+    <p class="text-center">
+			Have something to say? Ask a question or just say hi, anything! Feel free to contact me, my
+			inbox is always open!
+		</p>
+		<div class="mt-12 text-base">
+			<form on:submit|preventDefault={submitForm}>
+				<label for="name">Name</label>
+				<div class="mb-6 mt-2">
+					<input
+						type="text"
+						id="name"
+						name="name"
+						placeholder="Name"
+						required=""
+						class="w-full rounded focus:border-violet-600"
+						bind:value={name}
+					/>
+				</div>
+				<label for="email">Email</label>
+				<div class="mb-6 mt-2">
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="Email"
+						required=""
+						class="w-full rounded focus:border-violet-600"
+						bind:value={email}
+					/>
+				</div>
+				<label for="message">Message</label>
+				<div class="mb-6 mt-2">
+					<textarea
+						id="message"
+						name="message"
+						placeholder="Message"
+						required=""
+						class="w-full rounded h-36 focus:border-violet-600"
+						bind:value={message}
+					/>
+				</div>
+				<div class="flex justify-center">
+					<button
+						type="submit"
+						disabled={submitting}
+						class="bg-violet-600 hover:bg-violet-700 text-neutral-50 px-6 py-2 rounded">Send</button
+					>
+				</div>
+			</form>
+		</div>
+    <p class="text-center mt-8 mb-8 text-base md:text-lg">
+      Or you can contact me through one of these platforms
+    </p>
+    <div class="flex justify-center gap-10 text-violet-600">
+      <a href="mailto:mhafidk@gmail.com" target="_blank">
+        <svg class="stroke-violet-600 hover:stroke-violet-700 w-8 h-8" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 9l5 3.5L17 9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2 17V7a2 2 0 012-2h16a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2z" stroke-width="1.5"></path></svg></a>
+      <a href="https://github.com/mhafidk" target="_blank" rel="noreferrer">
+        <svg class="stroke-violet-600 hover:stroke-violet-700 w-8 h-8" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M16 22.027v-2.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7a5.44 5.44 0 00-1.5-3.75 5.07 5.07 0 00-.09-3.77s-1.18-.35-3.91 1.48a13.38 13.38 0 00-7 0c-2.73-1.83-3.91-1.48-3.91-1.48A5.07 5.07 0 005 5.797a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7a3.37 3.37 0 00-.94 2.58v2.87M9 20.027c-3 .973-5.5 0-7-3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      <a href="https://www.linkedin.com/in/mhafidk/" target="_blank" rel="noreferrer">
+        <svg class="stroke-violet-600 hover:stroke-violet-700 w-8 h-8" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M21 8v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8a5 5 0 015-5h8a5 5 0 015 5zM7 17v-7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 17v-3.25M11 10v3.75m0 0c0-3.75 6-3.75 6 0V17M7 7.01l.01-.011" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    </div>
+  </div>
+</div>
+{#if toggleModal}
+	<div
+		class="modal z-50 fixed w-full h-full top-0 left-0 flex items-center justify-center p-8 lg:p-0"
+	>
+		<div class="modal-overlay fixed w-full h-full bg-gray-900 opacity-50" />
+		<div
+			class="bg-white w-full lg:h-max lg:w-1/2 mx-auto rounded-lg shadow-xl z-50 overflow-y-auto"
+		>
+			<div class="content p-8 text-center text-base md:text-lg">
+				<p>Thank you for reaching me out.</p>
+				<p>I will get back to you as soon as possible!</p>
+				<button
+					class="mt-8 bg-violet-600 hover:bg-violet-700 text-neutral-50 px-6 py-2 rounded-md"
+					on:click={() => (toggleModal = !toggleModal)}>Close</button
+				>
+			</div>
+		</div>
+	</div>
+{/if}
