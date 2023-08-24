@@ -54,7 +54,7 @@
   </div>
   <div class="pt-3 text-neutral-50 text-base md:text-lg flex gap-2 flex-wrap md:flex-nowrap justify-center">
     <a href="/about" class="px-4 py-2 bg-violet-600 hover:bg-violet-700 rounded">More about me</a>
-    <a href="/about" class="px-4 py-2 w-40 bg-pink-600 hover:bg-pink-700 rounded">Read my blog</a>
+    <a href="/writing" class="px-4 py-2 w-40 bg-pink-600 hover:bg-pink-700 rounded">Read my blog</a>
   </div>
 </div>
 <div class="pb-32">
