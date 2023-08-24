@@ -1,11 +1,15 @@
 <script>
   import "../app.css";
   import { page } from '$app/stores';
+  import { dev } from '$app/environment';
+  import { inject } from '@vercel/analytics';
 
 	import Footer from "../lib/components/footer.svelte";
 	import Navbar from "../lib/components/navbar.svelte";
 
   let wip = ["personal-website"]
+
+  inject({ mode: dev ? 'development' : 'production' });
 </script>
 
 {#if wip.includes($page.url.pathname.split("/")[2]) || ($page.error !== undefined && $page.error !== null)}
