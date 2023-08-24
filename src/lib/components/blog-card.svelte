@@ -1,5 +1,6 @@
 <script>
   import { formatDate } from '$lib/helper';
+
   export let post;
 </script>
 

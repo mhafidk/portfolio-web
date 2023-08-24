@@ -123,7 +123,7 @@
     </div>
   </div>
 </div>
-<div class="pb-32">
+<div class="pb-12">
   <h2 class="text-2xl md:text-4xl font-bold border-b pb-2 text-center">WRITING</h2>
   <p class="text-sm pt-2 text-neutral-400 text-center">Anything I've on my mind</p>
   <div class="pt-8">
@@ -137,7 +137,7 @@
     <a href="/writing" class="bg-violet-600 hover:bg-violet-700 text-neutral-50 px-4 py-2 rounded">More</a>
   </div>
 </div>
-<div id="contact" class="pb-8"></div>
+<div id="contact" class="pb-32"></div>
 <div class="pb-32">
   <h2 class="text-2xl md:text-4xl font-bold border-b pb-2 text-center">CONTACT</h2>
   <p class="text-sm pt-2 text-neutral-400 text-center">Let's get in touch!</p>
