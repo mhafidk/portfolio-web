@@ -44,7 +44,7 @@
 				class="content p-8 text-center text-base md:text-lg flex flex-col justify-center items-center gap-2"
 			>
         <div class="">
-          <a href="/" class="text-2xl font-black bg-gradient-to-r from-violet-600 to-pink-600 bg-clip-text text-transparent tracking-tighter">MHK</a>
+          <a href="/" class="text-2xl font-black bg-gradient-to-r from-violet-600 to-pink-600 bg-clip-text text-transparent tracking-tighter" on:click={toggleMenu}>MHK</a>
         </div>
 				<a href="/about" class="py-6" on:click={toggleMenu}>About</a>
 				<a href="/projects" class="py-6" on:click={toggleMenu}>Projects</a>

@@ -108,7 +108,9 @@
     <div class="">
       <img src="/portfolio-web.webp" alt="MHK" class="border rounded w-full h-full">
       <div class="pt-4">
-        <h3 class="text-center text-lg md:text-2xl font-bold text-violet-600">Personal Website</h3>
+        <div class="flex justify-center">
+          <a href="/projects/personal-website" class="text-lg md:text-2xl font-bold text-violet-600 hover:text-violet-700">Personal Website</a>
+        </div>
         <p class="pt-3 text-justify">My very own website and blog! I build this site using Svelte, Tailwind CSS, and Graph CMS. Frontend is not my strong suit, but this site isn't that bad, right? I learnt a lot about frontend while making this site. A lot of new features will come out!</p>
         <div class="pt-3 text-sm md:text-base flex justify-center gap-6 text-pink-600">
           <p>Svelte</p>

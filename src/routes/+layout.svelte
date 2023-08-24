@@ -5,10 +5,10 @@
 	import Footer from "../lib/components/footer.svelte";
 	import Navbar from "../lib/components/navbar.svelte";
 
-  let wip = ["projects"]
+  let wip = ["personal-website"]
 </script>
 
-{#if wip.includes($page.url.pathname.split("/")[1]) || ($page.error !== undefined && $page.error !== null)}
+{#if wip.includes($page.url.pathname.split("/")[2]) || ($page.error !== undefined && $page.error !== null)}
   <slot />
 {:else}
   <div class="bg-neutral-50 text-neutral-900 font-medium">
