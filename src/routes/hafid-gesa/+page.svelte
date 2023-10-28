@@ -27,7 +27,7 @@
 <div class="">
   <div class="bg-yellow-50 static snap-x">
     <div class="h-screen font-serif flex justify-center items-center text-neutral-900">
-      <div class="text-base md:text-xl font-bold text-center z-50">
+      <div class="text-base md:text-xl font-bold text-center z-50 mb-16">
         <p class="">The Wedding of</p>
         <p class="block my-6 md:my-10 text-3xl md:text-7xl text-amber-400 drop-shadow-md">Hafid &nbsp;&&nbsp; Gesa</p>
         <!-- <div class="block md:hidden my-10 text-3xl text-amber-400 text-center">
@@ -44,15 +44,20 @@
     <div class="fixed bottom-0 left-0">
       <p class="font-serif text-xs pb-2 pl-3 font-bold">Sabtu, 25 November 2023</p>
     </div>
-    <div class="fixed bottom-0 right-0 blur-[1px]">
+    <div class="fixed bottom-0 right-0 blur-[1px] opacity-75">
       <img src="/flwr2.png" alt="" class="h-80 md:h-[45rem]">
     </div>
-    <div class="fixed top-0 left-0 blur-[1px]">
+    <div class="fixed top-0 left-0 blur-[1px] opacity-75">
       <img src="/flwr.png" alt="" class="h-80 md:h-[45rem]">
     </div>
     <div class="h-screen snap-center">
-      <div class="h-screen font-serif flex flex-col gap-8 justify-center items-center text-neutral-900">
-        <p class="text-2xl font-bold">Lokasi</p>
+      <div class="h-screen font-serif flex flex-col gap-8 justify-center items-center text-neutral-900 z-50">
+        <p class="text-2xl font-bold text-amber-400">Akad Nikah</p>
+        <div class="font-sans text-center font-semibold">
+          <p>Sabtu, 25 November 2023</p>
+          <p class="my-1">09:00 - 10:00</p>
+          <p>Alamat gesa</p>
+        </div>
         <div class="bg-white/30 bg-opacity-50 p-2 md:p-4 rounded-lg backdrop-blur-sm">
           <iframe title="address" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d991.0569402188!2d106.7967709285252!3d-6.492819999592007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMjknMzQuMiJTIDEwNsKwNDcnNTAuNyJF!5e0!3m2!1sen!2sid!4v1698465623593!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg w-72 md:w-[35rem] h-96"></iframe>
         </div>
@@ -60,9 +65,9 @@
     </div>
     <div class="h-screen snap-center">
       <div class="h-screen font-serif flex flex-col gap-8 justify-center items-center text-neutral-900">
-        <p class="text-2xl font-bold">Countdown</p>
-        <div class="font-sans flex flex-wrap justify-center gap-8 text-lg md:text-xl mt-2">
-          <div class="text-center">
+        <p class="text-2xl font-bold text-amber-400">Countdown</p>
+        <div class="font-sans font-semibold flex flex-wrap justify-center gap-8 text-lg md:text-xl mt-2">
+          <div class="text-center ">
             <p>{days}</p>
             <p class="text-lg">Day</p>
           </div>
