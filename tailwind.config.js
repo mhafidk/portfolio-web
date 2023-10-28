@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Montserrat', '"Open Sans"', 'Roboto', 'Arial']
+        'sans': ['Montserrat', '"Open Sans"', 'Roboto', 'Arial'],
+        'serif': ['"Dancing Script"'],
       },
     },
   },
