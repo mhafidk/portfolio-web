@@ -55,8 +55,8 @@
         <p class="text-2xl font-bold text-amber-400">Akad Nikah</p>
         <div class="font-sans text-center font-semibold">
           <p>Sabtu, 25 November 2023</p>
-          <p class="my-1">09:00 - 10:00</p>
-          <p>Alamat gesa</p>
+          <p class="my-1">09:00 - 10:00 WIB</p>
+          <p>Kp. Setu, RT/RW 001/005 No. 85</p>
         </div>
         <div class="bg-white/30 bg-opacity-50 p-2 md:p-4 rounded-lg backdrop-blur-sm">
           <iframe title="address" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d991.0569402188!2d106.7967709285252!3d-6.492819999592007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMjknMzQuMiJTIDEwNsKwNDcnNTAuNyJF!5e0!3m2!1sen!2sid!4v1698465623593!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg w-72 md:w-[35rem] h-96"></iframe>
