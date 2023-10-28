@@ -26,12 +26,12 @@
 
 <div class="bg-yellow-50 static snap-x">
   <div class="h-screen font-serif flex justify-center items-center text-neutral-900">
-    <div class="text-xl font-bold text-center">
+    <div class="text-lg md:text-xl font-bold text-center">
       <p class="">The Wedding of</p>
       <p class="hidden md:block my-10 text-7xl text-amber-400">Hafid &nbsp;&&nbsp; Gesa</p>
-      <div class="block md:hidden my-10 text-5xl text-amber-400 text-center">
+      <div class="block md:hidden my-10 text-3xl text-amber-400 text-center">
         <p>Hafid</p>
-        <p class="mb-5 mt-6">&</p>
+        <p class="mb-3 mt-4">&</p>
         <p>Gesa</p>
       </div>
       <p class="">Sabtu, 25 November 2023</p>
