@@ -73,11 +73,24 @@
     </div>
     <div class="mt-56">
       <div class="font-serif flex flex-col gap-8 justify-center items-center text-neutral-900 z-50">
-        <p class="text-3xl font-bold text-amber-400">Akad Nikah</p>
+        <div class="text-center flex gap-8">
+          <div class="">
+            <p class="text-3xl font-bold text-amber-400">Akad Nikah</p>
+            <div class="font-sans text-center mt-6">
+              <p>Sabtu, 25 November 2023</p>
+              <p class="my-1">09:00 - 12:00 WIB</p>
+            </div>
+          </div>
+          <div class="">
+            <p class="text-3xl font-bold text-amber-400">Tasyakuran</p>
+            <div class="font-sans text-center mt-6">
+              <p>Sabtu, 25 November 2023</p>
+              <p class="my-1">12:00 - 15:00 WIB</p>
+            </div>
+          </div>
+        </div>
         <div class="font-sans text-center">
-          <p>Sabtu, 25 November 2023</p>
-          <p class="my-1">09:00 - 12:00 WIB</p>
-          <p class="mt-6">Kp. Setu, RT/RW 001/005 No. 85</p>
+          <p class="mt-2">Kp. Setu, RT/RW 001/005 No. 85</p>
           <p>Bojonggede, Kab. Bogor</p>
         </div>
         <div class="bg-white/30 bg-opacity-50 p-2 md:p-4 rounded-lg backdrop-blur-sm">
@@ -121,5 +134,6 @@
         </div>
       </div>
     </div>
+    <audio controls autoplay loop src="/sound.mp3" type="audio/mpeg" class="opacity-0"></audio>
   </div>
 </div>
