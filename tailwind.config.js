@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         'sans': ['Montserrat', '"Open Sans"', 'Roboto', 'Arial'],
-        'serif': ['"Dancing Script"'],
+        'serif': ['Galada'],
       },
     },
   },
