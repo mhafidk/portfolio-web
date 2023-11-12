@@ -73,7 +73,7 @@
         <div class="h-px bg-white my-6"></div>
         <p class="my-2 font-semibold">Sabtu, 25 November 2023</p>
         <p>Akad Nikah: 09:00 - 12:00 WIB</p>
-        <p>Tasyakuran: 12:00 - 15:00 WIB</p>
+        <p>Tasyakuran: 12:00 - 16:00 WIB</p>
         <p class="mt-2">Kp. Setu, RT/RW 001/005 No. 85</p>
         <p class="">Bojonggede, Kab. Bogor</p>
         <iframe title="address" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d991.0569402188!2d106.7967709285252!3d-6.492819999592007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMjknMzQuMiJTIDEwNsKwNDcnNTAuNyJF!5e0!3m2!1sen!2sid!4v1698465623593!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg w-72 md:w-full h-96 mx-auto mt-4"></iframe>
