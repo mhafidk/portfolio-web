@@ -6,6 +6,7 @@
   let ngunduh = ($page.url.searchParams.get('nm') === 't');
 
   let countDownDate = new Date("Nov 25, 2023 09:00:00").getTime();
+  let now = 0;
   let days = 0;
   let hours = 0;
   let minutes = 0;
@@ -13,8 +14,13 @@
 
   onMount(() => {
     let x = setInterval(function() {
-      let now = new Date().getTime();
-      let distance = countDownDate - now;
+      now = new Date().getTime();
+      let distance = 0;
+      if (now > countDownDate) {
+        distance =  now - countDownDate;
+      } else {
+        distance = countDownDate - now;
+      }
 
       days = Math.floor(distance / (1000 * 60 * 60 * 24));
       hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -58,7 +64,7 @@
     <div class="text-center mt-24 max-w-screen-sm mx-auto px-2">
       <p class="font-['Noto_Naskh_Arabic'] text-2xl text-amber-400">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
       <p class="mt-8">Assalamu'alaikum warrahmatullahi wabarakatuh.</p>
-      <p>Dengan memohon Rahmat dan Ridho Allah <span class="font-['Noto_Naskh_Arabic']">سُبْحَانَهُ وَ تَعَالَى</span> kami bermaksud untuk membagikan kabar bahagia serta memohon do'a restu Bapak/Ibu/Saudara/i pada acara Pernikahan:</p>
+      <p>Dengan memohon Rahmat dan Ridho Allah <span class="font-['Noto_Naskh_Arabic']">سُبْحَانَهُ وَ تَعَالَى</span> kami bermaksud untuk membagikan kabar bahagia serta memohon do'a restu Bapak/Ibu/Saudara/i pada Pernikahan:</p>
       <div class="my-8 font-serif text-4xl text-amber-400">
         <p class="backdrop-blur-sm py-2 rounded">Gesando Nodi Nadias, S.Pd.</p>
         <p class="font-sans text-sm text-neutral-500">Putri pertama dari <br class="block md:hidden"/>Bapak Budi Suhono & Ibu Tri Yekti Asriani</p>
@@ -82,10 +88,10 @@
         </div>
       {:else}
         <div class="bg-amber-400 rounded px-3 py-4 mt-6 backdrop-blur-sm text-green-900 shadow">
-          <p class="text-2xl font-semibold py-6">Ngunduh Mantu</p>
+          <p class="text-2xl font-semibold py-6">Tasyakuran</p>
           <div class="h-px bg-white my-6"></div>
           <p class="my-2 font-semibold">Sabtu, 2 Desember 2023</p>
-          <p>09:00 - 12:00 WIB</p>
+          <p>10:00 - 12:00 WIB</p>
           <p class="mt-2">Komplek Perdagangan Blok A1 No. 4-5</p>
           <p class="">Bojonggede, Kab. Bogor</p>
           <iframe title="address" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d991.090955264893!2d106.81264192852518!3d-6.475517999593071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMjgnMzEuOSJTIDEwNsKwNDgnNDcuOCJF!5e0!3m2!1sen!2sid!4v1700107106300!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg w-72 md:w-full h-96 mx-auto mt-4"></iframe>
@@ -102,7 +108,11 @@
 
     <div class="h-screen">
       <div class="h-screen font-serif flex flex-col gap-8 justify-center items-center text-neutral-900">
-        <p class="text-3xl font-bold text-amber-400">Countdown</p>
+        {#if now > countDownDate}
+          <p class="text-3xl font-bold text-amber-400">Countup</p>
+        {:else}
+          <p class="text-3xl font-bold text-amber-400">Countdown</p>
+        {/if}
         <div class="font-sans font-semibold flex flex-wrap justify-center gap-2 text-lg md:text-xl mt-2 px-12">
           <div class="text-center bg-amber-400 px-4 py-3 rounded text-white w-20 backdrop-blur-sm">
             <p>{days}</p>
