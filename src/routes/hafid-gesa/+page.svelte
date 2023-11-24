@@ -88,7 +88,7 @@
         </div>
       {:else}
         <div class="bg-amber-400 rounded px-3 py-4 mt-6 backdrop-blur-sm text-green-900 shadow">
-          <p class="text-2xl font-semibold py-6">Tasyakuran</p>
+          <p class="text-2xl font-semibold py-6">Ngunduh Mantu</p>
           <div class="h-px bg-white my-6"></div>
           <p class="my-2 font-semibold">Sabtu, 2 Desember 2023</p>
           <p>10:00 - 12:00 WIB</p>
